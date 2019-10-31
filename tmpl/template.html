@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Whois checker</title>
+		<link rel="stylesheet" type="text/css" href="../style/style.css">
+	</head>
+	<body>
+		<h1>Whois checker</h1>
+		<h4>Please note that we currently supports only following TLDs for query: <br />##supported_tlds##</h4>
+		<div class="form_div">
+			<form name="form" id="myform" action="index.php" method="get">
+				<input type="text" maxlength="100" name="domain" value=""  placeholder="Domain for query" size="30">
+				<input type="submit" value="Check" />
+			</form>
+		</div>
+		<div class="response_div1">
+			##response_html##
+		</div>
+		<div class="response_div2">
+			##response2_html##
+		</div>
+	</body>
+</html>
