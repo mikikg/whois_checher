@@ -1,1 +1,1 @@
-# whois_checher
+# Minimalistic WHOIS checker engine in PHP
