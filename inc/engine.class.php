@@ -61,9 +61,8 @@ class MyWhoisChecker
         $domain = str_ireplace(array('http://', 'https://', 'www.', ' '), '', $domain);
 
         //return only TLD and Domain from string
-        $parts = explode('.', $domain);
-        $tld = end($parts);
-        $name = prev($parts);
+        $tld = end(explode('.', $domain));
+        $name = substr($domain, 0, - strlen($tld) - 1);
 
         //if not empty assign values
         if (!empty($tld) && !empty($name)) {
